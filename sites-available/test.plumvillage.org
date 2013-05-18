@@ -21,11 +21,11 @@ server {
 	listen   80; ## listen for ipv4; this line is default and implied
 	#listen   [::]:80 default ipv6only=on; ## listen for ipv6
 
-	root /usr/share/nginx/www/new.plumvillage.org;
+	root /var/www/test.plumvillage.org;
 	index index.php;
         
 	# Make site accessible from http://localhost/
-	server_name new.plumvillage.org www.new.plumvillage.org;
+	server_name test.plumvillage.org www.test.plumvillage.org;
         server_name_in_redirect off;
         client_max_body_size 10M;
 
